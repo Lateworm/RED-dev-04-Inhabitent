@@ -28,28 +28,28 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
-// Change Wp logo and link on wp-admin login
+// Set custom logo and hyperlink on wp-admin login
 
-function inhabitent_login_logo_url() {
-    return home_url();
-}
-add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
-
-function inhabitent_login_logo() { ?>
+function tent_login_logo() { ?>
     <style type="text/css">
-      #login h1 a, .login h1 a {
-    		background-image: url(<?php echo get_stylesheet_directory_uri()?>/images/inhabitent-logo-text-dark.svg);
-				height:65px;
+      #login h1 a {
+    		background-image: url(<?php echo get_stylesheet_directory_uri()?>/img/inhabitent-logo-text-dark.svg);
+				height:57px;
 				width:320px;
-				background-size: 320px 65px;
+				background-size: 320px 57px;
 				background-repeat: no-repeat;
       }
     </style>
 <?php }
-add_action( 'login_head', 'inhabitent_login_logo' );
 
-function inhabitent_logo_url_title(){
-	return 'Inhabitent';
+function tent_login_logo_hyperlink() {
+    return home_url();
 }
 
-add_filter('login_headertitle', 'inhabitent_logo_url_title');
+function tent_login_logo_title(){
+	return 'Inhabitent 4 eva!';
+}
+
+add_action( 'login_head', 'tent_login_logo' );
+add_filter( 'login_headerurl', 'tent_login_logo_hyperlink' );
+add_filter('login_headertitle', 'tent_login_logo_title');
