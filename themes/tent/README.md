@@ -27,3 +27,15 @@ You'll need MAMP or something similar running.
 ### 6. Open the browser
 
 This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
+
+## Dev Tasks
+
+- Add debugging plugins
+- Remove editor links from wp-admin
+- Finish setting up fonts in _typography,scss
+- Create all variables (fonts, colours, etc...)
+- Create _globals.scss
+- Create any necessary template files
+- Set up media queries?
+
+
