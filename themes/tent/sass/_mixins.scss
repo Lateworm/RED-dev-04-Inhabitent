@@ -1,3 +1,20 @@
+// Standard grid layout
+
+@mixin grid-site {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr $base__width 1fr;
+	grid-template-rows: auto;
+}
+
+@mixin grid-main {
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	grid-column-gap: 2*$base__space-unit;
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
