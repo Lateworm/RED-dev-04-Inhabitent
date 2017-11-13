@@ -1,34 +1,43 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+$base__width: 1120px;
 
 // Layout
 
-$main-content-width: 1120px;
-$main-spacing: 1.5rem; // don't know what this is for
-
-$border-solid: 1px solid #e1e1e1;
-$border-dashed: 1px dashed #c8c8c8;
-
-// Type
-
-$font-main: "Merriweather", serif;
-
-$line-height: 1.75;
-
-$font-accent: "Novovento Sans Web", sans-serif; // for headings etc.
-
-$font_code: "Monaco", "Consolas", "Andale Mono", "DejaVu Sans Mono", monospace;
-$font_pre: "Courier 10 Pitch", Courier, monospace;
-
+$border__main: 1px solid #e1e1e1;
+$border__accent: 1px dashed #c8c8c8;
 
 // Colors
 
-$background-color-main: #fff;
+$color__background-body: #fff;
+$color__text-main: #404040;
+$color__brand1: #248A83;
+$color__brand2: #2f1339;
+$color__brand3: #d99054;
+$color__brand4: #f0e4d1; // titles overlaid over blog photos
+$color__brand5: #a1a1a1;
+$color__brand6: #808080;
 
-$color-1: #404040; // dark grey
-$color_2: #248A83; // sea green
-$color_3: #2f1339; // poiple
-$color_4: #d99054; // yellow-orange
-$color_5: #f0e4d1; // creamy
-$color_6: #a1a1a1; // light grey
-$color_7: #808080; // mid grey
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
 
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
 
+$color__link: #248a83;
+$color__link-visited: #248a83;
+$color__link-hover: #2f1339;
+
+// Typography
+
+$font__main: 'Merriweather', serif;
+$font__accent: 'Novecento', sans-serif; // (for headings, etc.)
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
+
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$font__letter-spacing: .125em;
