@@ -32,10 +32,10 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
 
 - Add debugging plugins
 - Remove editor links from wp-admin
-- Finish setting up fonts in _typography,scss
 - Create all variables (fonts, colours, etc...)
 - Create _globals.scss
 - Create any necessary template files
 - Set up media queries?
+- Rename any functions prefixed by red_starter
 
 
