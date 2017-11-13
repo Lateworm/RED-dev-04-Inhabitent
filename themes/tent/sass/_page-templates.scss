@@ -2,4 +2,34 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+.site {
+	@include grid-site;
+}
+
+.site-content {
+	@include grid-main;
+}
+
+.content-area {
+	grid-column: 1;
+}
+
+.widget-area {
+	grid-column: 2;
+	padding-left: 2*$base__space-unit;
+}
+
+.site-content {
+	grid-column: 2;
+}
+
+header,
+footer {
+	grid-column: 1/4;
+}
+
+.wp-post-image {
+	width: 100%;
+}
+
+
