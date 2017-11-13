@@ -17,6 +17,38 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__accent;
+	text-transform: uppercase;
+	letter-spacing: $font__letter-spacing;
+}
+
+.entry-header {
+	position: relative;
+}
+
+.entry-title a,
+.entry-meta {
+	background-color: $color__brand1;
+	color: $color__background-body;
+	position: absolute;
+	padding: $base__space-unit;
+
+}
+
+.entry-title a {
+	top: $base__space-unit;
+	left: 0;
+	&:visited {
+		color: $color__background-body;
+	}
+	&:hover {
+		color: $color__brand4;
+	}
+}
+
+.entry-meta {
+	bottom: 0;
+	right: 0;
 }
 
 /* Copy */
