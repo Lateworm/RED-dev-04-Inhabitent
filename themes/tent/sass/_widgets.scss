@@ -2,8 +2,12 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget-area {
+/* Sidebar */
+
+.site-content .widget-area {
 	border-left: $border__main;
+	grid-column: 2;
+	padding-left: 2*$base__space-unit;
 }
 
 .widget {
@@ -15,7 +19,14 @@
 	}
 }
 
-/* Search widget. */
+/* Search widget */
+
 .widget_search .search-submit {
 	display: none;
 }
+
+
+
+
+
+
