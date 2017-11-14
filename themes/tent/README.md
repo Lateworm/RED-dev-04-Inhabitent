@@ -30,12 +30,12 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
 
 ## Dev Tasks
 
-- Add debugging plugins
-- Remove editor links from wp-admin
-- Create all variables (fonts, colours, etc...)
+- Figure out the nested grid for the footer ( maybe draw it out on paper)
 - Create _globals.scss
 - Create any necessary template files
 - Set up media queries?
-- Rename any functions prefixed by red_starter
+- Rename any functions prefixed by red_starter (there's a bunch in functions.php)
+- Run Theme Check Plugin before you submitting!
+- Also, generally make sure that you're adhering to [WordPress' PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
 
 
