@@ -1,6 +1,6 @@
 # RED Starter
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A custom WordPress theme and functionality for the fictitious Inhabitent Camping Supply Company. Based on a starter theme forked from Underscores.
 
 ## Installation
 
@@ -26,7 +26,7 @@ You'll need MAMP or something similar running.
 
 ### 6. Open the browser
 
-This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
+This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `themes/tent`.
 
 ## Dev Tasks
 
@@ -34,10 +34,7 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
 
 - In extras.php, enqueue a style that loads an image from CFS if we're on the front page.
 - create page templates in page-templates folder
-- Move local npm and gulp installation to wp-content or...
-			- move this file to wp-content...
-			- change instructions to include running gulp in themes/tent
-- Define a new grid include for use in the footer
+
 
 ### Major Goals
 
