@@ -1,18 +1,8 @@
 .site-footer {
-	@include grid-site;
-	background-image: url("../../img/dark-wood.png")
-}
-
-.site-info {
-	grid-column: 2;
-}
-
-
-
-footer {
+	background-image: url("../../img/dark-wood.png");
 	color: $color__background-body;
 	.widget-area {
-		grid-column: 2;
+		@include grid-footer;
 	}
 	a, a:hover, a:visited {
 		color: $color__background-body;
@@ -25,3 +15,15 @@ footer {
 		margin-right: 2*$base__space-unit;
 	}
 }
+
+
+
+
+.site-info {
+	text-align: center;
+}
+
+
+
+
+

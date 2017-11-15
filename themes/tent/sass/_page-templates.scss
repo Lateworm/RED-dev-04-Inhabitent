@@ -2,29 +2,16 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.site {
-	@include grid-site;
-}
-
 .site-content {
-	@include grid-main;
-}
-
-.content-area {
-	grid-column: 1;
-}
-
-.site-content {
-	grid-column: 2;
-}
-
-header,
-footer {
-	grid-column: 1/4;
+	@include grid-content;
 }
 
 .wp-post-image {
 	width: 100%;
+}
+
+.custom-hero {
+	height: 100vh;
 }
 
 
