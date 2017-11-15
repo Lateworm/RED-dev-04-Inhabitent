@@ -483,6 +483,15 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* Grid */
+.menu-main-menu-container {
+  display: grid;
+  width: 1120px;
+  height: 48px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100%;
+  margin: auto; }
+
 /* Links */
 a {
   color: #248a83;
@@ -741,50 +750,35 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1120px 1fr;
-  grid-template-rows: auto; }
-
 .site-content {
   display: grid;
-  width: 100%;
+  width: 1120px;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  grid-column-gap: 3rem; }
-
-.content-area {
-  grid-column: 1; }
-
-.site-content {
-  grid-column: 2; }
-
-header,
-footer {
-  grid-column: 1/4; }
+  margin: auto; }
 
 .wp-post-image {
   width: 100%; }
 
+.custom-hero {
+  height: 100vh; }
+
 .site-footer {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1120px 1fr;
-  grid-template-rows: auto;
-  background-image: url("../../img/dark-wood.png"); }
-
-.site-info {
-  grid-column: 2; }
-
-footer {
+  background-image: url("../../img/dark-wood.png");
   color: #fff; }
-  footer .widget-area {
-    grid-column: 2; }
-  footer a, footer a:hover, footer a:visited {
+  .site-footer .widget-area {
+    display: grid;
+    width: 1120px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: auto; }
+  .site-footer a, .site-footer a:hover, .site-footer a:visited {
     color: #fff; }
-  footer .widget-title {
+  .site-footer .widget-title {
     color: #d99054; }
-  footer .widget_custom_html {
+  .site-footer .widget_custom_html {
     margin-top: 3rem;
     margin-right: 3rem; }
+
+.site-info {
+  text-align: center; }
