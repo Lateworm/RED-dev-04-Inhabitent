@@ -30,12 +30,36 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp`.
 
 ## Dev Tasks
 
-- Figure out the nested grid for the footer ( maybe draw it out on paper)
+### Baby Steps
+
+- In extras.php, enqueue a style that loads an image from CFS if we're on the front page.
+- create page templates in page-templates folder
+- Move local npm and gulp installation to wp-content or...
+			- move this file to wp-content...
+			- change instructions to include running gulp in themes/tent
+- Define a new grid include for use in the footer
+
+### Major Goals
+
 - Create _globals.scss
 - Create any necessary template files
-- Set up media queries?
 - Rename any functions prefixed by red_starter (there's a bunch in functions.php)
+
+### Stretch Goals
+
+- Set up media queries?
+- Create Adventures pages?
+- Move the opening of .site-content from teh end of header.php to the top of something else... might be more elegant that the current solution in about.php. Or, build the creation of custom-hero into header.php, using an if to check if it exists.
+- complete about.php
+
+### Final steps for completion
+
 - Run Theme Check Plugin before you submitting!
 - Also, generally make sure that you're adhering to [WordPress' PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
+
+## Room for Improvement
+
+- "Distraction-free writing mode" in Custom Field Suite's WYSIWYG doesn't work.
+- Custom Field Suite's WYSIWYG doesn't provide an HTML view.
 
 
