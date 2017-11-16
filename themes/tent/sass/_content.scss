@@ -2,6 +2,38 @@
 # Content
 --------------------------------------------------------------*/
 
+.site {
+	@include grid-layout;
+}
+
+.site-header {
+	@include site-header;
+}
+
+.site-content {
+	@include site-content;
+}
+
+.widgetized-sidebar {
+ @include widgetized-sidebar;
+}
+
+.site-footer {
+	@include site-footer;
+}
+
+.widgetized-footer {
+ @include widgetized-footer;
+}
+
+.site-info {
+	@include site-info;
+}
+
+
+
+
+
 /* Posts and pages */
 
 .sticky {
