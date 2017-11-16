@@ -9,17 +9,20 @@
 
 			</div><!-- #content -->
 
+
+
 			<footer id="colophon" class="site-footer" role="contentinfo">
-
-				<div id="tertiary" class="widget-area" role="complementary">
-						<?php dynamic_sidebar( 'footer-1' ); ?>
-				</div>
-
-				<div class="site-info">
-					<p>Copyright © 2017 Inhabitent</p>
-				</div><!-- .site-info -->
-
 			</footer><!-- #colophon -->
+
+			<div id="tertiary" class="widgetized-footer" role="complementary">
+					<?php dynamic_sidebar( 'footer-1' ); ?>
+			</div>
+
+			<div class="site-info">
+				<p>Copyright © 2017 Inhabitent</p>
+			</div><!-- .site-info -->
+
+			
 		</div><!-- #page -->
 		
 
