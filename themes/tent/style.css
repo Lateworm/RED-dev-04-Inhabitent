@@ -297,10 +297,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #248A83;
   color: #fff;
   position: absolute;
-  padding: 1.5rem; }
+  padding: 16px; }
 
 .entry-title a {
-  top: 1.5rem;
+  top: 16px;
   left: 0; }
   .entry-title a:visited {
     color: #fff; }
@@ -313,16 +313,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 16px; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5rem; }
+  margin: 0 16px; }
 
 address {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 16px; }
 
 pre {
   background: #eee;
@@ -380,7 +380,7 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 16px; }
 
 ul, ol {
   padding: 0; }
@@ -395,13 +395,13 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-left: 16px; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5rem 1.5rem; }
+  margin: 0 16px 16px; }
 
 img {
   height: auto;
@@ -410,7 +410,7 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5rem;
+  margin: 0 0 16px;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -483,15 +483,6 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/* Grid */
-.menu-main-menu-container {
-  display: grid;
-  width: 1120px;
-  height: 48px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 100%;
-  margin: auto; }
-
 /* Links */
 a {
   color: #248a83;
@@ -521,7 +512,7 @@ a {
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
+      top: 16px;
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -556,7 +547,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5rem;
+  margin: 0 0 16px;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -609,12 +600,12 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5rem; }
+  margin-right: 16px; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5rem; }
+  margin-left: 16px; }
 
 .aligncenter {
   clear: both;
@@ -637,10 +628,10 @@ a {
 .site-content .widget-area {
   border-left: 1px solid #e1e1e1;
   grid-column: 2;
-  padding-left: 3rem; }
+  padding-left: 32px; }
 
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 16px;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -652,12 +643,47 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 256px 560px 304px 1fr;
+  grid-template-rows: 50px auto auto auto auto;
+  grid-gap: 4px; }
+
+.site-header {
+  grid-column: 2/5;
+  grid-row: 1; }
+
+.custom-hero {
+  grid-column: 1/6;
+  grid-row: 2; }
+
+.site-content {
+  grid-column: 2/4;
+  grid-row: 3; }
+
+.widgetized-sidebar {
+  grid-column: 4;
+  grid-row: 3; }
+
+.site-footer {
+  grid-column: 1/6;
+  grid-row: 4/6; }
+
+.widgetized-footer {
+  grid-column: 2/4;
+  grid-row: 4; }
+
+.site-info {
+  grid-column: 2 / 5;
+  grid-row: 5; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 16px; }
 
 .updated:not(.published) {
   display: none; }
@@ -669,11 +695,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 16px 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5rem; }
+  margin: 0 0 16px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -706,7 +732,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5rem;
+  margin-bottom: 16px;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -720,7 +746,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 16px; }
 
 .gallery-item {
   display: inline-block;
@@ -750,12 +776,13 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site-content {
-  display: grid;
-  width: 1120px;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  margin: auto; }
+/* front-page */
+.front-page-journal {
+  width: 1120px; }
+
+.front-page-journal-entries {
+  width: 256px;
+  background-color: #f0f; }
 
 .wp-post-image {
   width: 100%; }
@@ -766,19 +793,13 @@ object {
 .site-footer {
   background-image: url("../../img/dark-wood.png");
   color: #fff; }
-  .site-footer .widget-area {
-    display: grid;
-    width: 1120px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    margin: auto; }
   .site-footer a, .site-footer a:hover, .site-footer a:visited {
     color: #fff; }
   .site-footer .widget-title {
     color: #d99054; }
   .site-footer .widget_custom_html {
-    margin-top: 3rem;
-    margin-right: 3rem; }
+    margin-top: 32px;
+    margin-right: 32px; }
 
 .site-info {
   text-align: center; }
