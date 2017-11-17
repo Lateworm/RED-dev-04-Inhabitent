@@ -8,13 +8,17 @@
 
 // copy content from page.php?
 ?>
+
+<?php get_header(); ?>
+
 <header class="entry-header custom-hero">
 	<div class="container">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</div>
 </header>
 
-<?php get_header(); ?>
+<div id="content" class="site-content">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
