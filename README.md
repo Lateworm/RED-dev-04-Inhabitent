@@ -32,9 +32,17 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 
 ### Baby Steps
 
+- move `<div id="content" class="site-content">`into all page template files, right below `get_header();`
+- move grid stuff from _content.scss to a new _grid-layout.scss file
+- add products via wp-admin
+- Set up Journal entries on frontpage
+	- the_permalink, wp_count_comments
 - In extras.php, enqueue a style that loads an image from CFS if we're on the front page.
 - create page templates in page-templates folder
-
+- Fix @package declarations
+- Figure out how to apply a certain css style to a certain element if on a certain page
+- Create content to be displayed in the Shop Stuff area
+- complete about.php
 
 ### Major Goals
 
@@ -47,12 +55,15 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 - Set up media queries?
 - Create Adventures pages?
 - Move the opening of .site-content from teh end of header.php to the top of something else... might be more elegant that the current solution in about.php. Or, build the creation of custom-hero into header.php, using an if to check if it exists.
-- complete about.php
+- go responsive
+- create a Contact Info widget
+
 
 ### Final steps for completion
 
 - Run Theme Check Plugin before you submitting!
 - Also, generally make sure that you're adhering to [WordPress' PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
+- customize the theme's screenshot and delete that other theme file that's still hangin' around
 
 ## Room for Improvement
 
