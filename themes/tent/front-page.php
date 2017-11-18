@@ -1,12 +1,20 @@
 <?php
+
 /**
- * The front page template.
+ * Template Name: Frontpage Template
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-<div id="content" class="site-content">
+
+<header class="entry-header custom-hero">
+</header>
+<div class="container custom-hero-label">
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+</div>
+
+<div id="content" class="site-content-wide">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -28,9 +36,15 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
 
+
+
+
+
+
+
 		<!-- Jim's shop stuff code -->
+		<h2>Shop Stuff</h2>
 		<section class="product-info container">
-			<h2>Shop Stuff</h2>
 			<?php
 					$terms = get_terms( array(
 							'taxonomy' => 'product-type',
@@ -41,8 +55,8 @@ get_header(); ?>
 					<div class="product-type-blocks">
 						<?php foreach ( $terms as $term ) : ?>
 								<div class="product-type-block-wrapper">
-									<img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-									<p><?php echo $term->description; ?></p>
+									<img src="<?php echo get_template_directory_uri() . '/img/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+									<p><?php echo $term->description; ?></p> <!-- bring in the product type icons -->
 									<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
 								</div>
 						<?php endforeach; ?>
@@ -52,15 +66,15 @@ get_header(); ?>
 
 
 
-		<h2 style="">Inhabitent Journal</h2>
+		<h2>Inhabitent Journal</h2>
 		<div class="front-page-journal">
+			
 			<?php /* start the secondary loop to return journal entries */
 				$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, );
 				$journal_posts = get_posts( $args ); // returns an array of posts
+				foreach ( $journal_posts as $post ) : setup_postdata( $post );
 			?>
-			<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 
-				<!-- Content from your array of post results goes here -->
 				<div class="front-page-journal-entries">
 					<?php the_post_thumbnail( 'medium' ); ?>
 					<span>
