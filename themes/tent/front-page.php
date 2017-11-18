@@ -10,8 +10,8 @@ get_header(); ?>
 
 <header class="entry-header custom-hero">
 </header>
-<div class="container custom-hero-label">
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<div class="container custom-hero-title">
+	<img class="entry-title" src="<?php echo get_stylesheet_directory_uri()?>/img/inhabitent-logo-full.svg" >
 </div>
 
 <div id="content" class="site-content-wide">
