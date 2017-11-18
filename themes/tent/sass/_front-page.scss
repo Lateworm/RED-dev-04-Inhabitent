@@ -1,18 +1,12 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-
-/* front-page */
-
 .front-page-journal { // the container that holds the three journal entries on the front page
 	display: flex;
 	justify-content: space-between;
 }
 
 .front-page-journal-entries {
-	width: 400px;
+	width: 358px;
 	border: $border__main;
-
+	padding: 0 $base__space-unit;
 }
 
 .wp-post-image {
@@ -22,3 +16,4 @@
 .custom-hero {
 	height: 100vh;
 }
+
