@@ -1,22 +1,26 @@
 .site-footer {
 	background-image: url("../../img/dark-wood.png");
 	color: $color__background-body;
-	.widget-area {
-		@include grid-footer;
-	}
+}
+
+
+.widgetized-footer,
+.site-info {
+	color: $color__background-body;
 	a, a:hover, a:visited {
 		color: $color__background-body;
 	}
 	.widget-title {
 		color: $color__brand3;
 	}
-	.widget_custom_html {
-		margin-top: 2*$base__space-unit;
-		margin-right: 2*$base__space-unit;
+	.widget {
+		margin-right: 3*$base__space-unit;
 	}
 }
 
-
+.widgetized-footer {
+	display: flex;
+}
 
 
 .site-info {
