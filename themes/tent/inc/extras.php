@@ -57,25 +57,29 @@ add_filter('login_headertitle', 'tent_login_logo_title');
 
 
 
-function inhabitent_dynamic_css() {
-	if ( ! is_page_template( 'page-templates/about.php' ) ) {
+function inhabitent_dynamic_css() { // Custom background images for the full-height headers
+
+	if ( is_page_template('page-templates/about.php') || is_front_page() ) {
+
+		$image = CFS()->get( 'hero_image' );
+
+		if ( ! $image ) {
+			return;
+		}
+
+		$hero_css = ".page-template-about .entry-header, .page-template-front-page .entry-header {
+			background:
+				linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+				url({$image}) no-repeat center bottom;
+			background-size: cover, cover;
+		}";
+
+		wp_add_inline_style( 'tent-style', $hero_css ); // stylesheet to hook onto, function to run
+
+	} else {
 		return;
 	}
-
-	$image = CFS()->get( 'about_header_image' );
-
-	if ( ! $image ) {
-		return;
-	}
-
-	$hero_css = ".page-template-about .entry-header {
-		background:
-			linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-			url({$image}) no-repeat center bottom;
-		background-size: cover, cover;
-	}";
-
-	wp_add_inline_style( 'tent-style', $hero_css );
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
