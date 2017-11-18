@@ -32,17 +32,19 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 
 ### Baby Steps
 
-- move `<div id="content" class="site-content">`into all page template files, right below `get_header();`
-- move grid stuff from _content.scss to a new _grid-layout.scss file
-- add products via wp-admin
+
+
+
+- use add_action_pre_get_post to change the title at the top of product pages
+- Add search to navbar (there's a specific wordpress function that can go in header.php)
+
 - Set up Journal entries on frontpage
 	- the_permalink, wp_count_comments
-- In extras.php, enqueue a style that loads an image from CFS if we're on the front page.
-- create page templates in page-templates folder
+
 - Fix @package declarations
-- Figure out how to apply a certain css style to a certain element if on a certain page
 - Create content to be displayed in the Shop Stuff area
 - complete about.php
+- Figure out how to apply a certain css style to a certain element if on a certain page ?
 
 ### Major Goals
 
@@ -52,12 +54,20 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 
 ### Stretch Goals
 
+- what page template files need to exist for adventures?
+- Create a PHP template for custom the custom post type archive. archive-adventure.php, single-adventure.php
+	- Archive.php would be a good palce to start.
+	- Refer to template heirarchy diagram.
+	- Name it the right thing and it should link up.  Will also need a new version of single.php for the custom post type.
+- Get individual adventure pages working, with images
+	- based off single.php but with the images like about.php (CFS will need to be included)
+
 - Set up media queries?
 - Create Adventures pages?
 - Move the opening of .site-content from teh end of header.php to the top of something else... might be more elegant that the current solution in about.php. Or, build the creation of custom-hero into header.php, using an if to check if it exists.
 - go responsive
+- Hide featured image uploader on pages that use the CFS to upload the custom hero
 - create a Contact Info widget
-
 
 ### Final steps for completion
 
