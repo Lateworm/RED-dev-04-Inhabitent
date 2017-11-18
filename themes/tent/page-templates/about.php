@@ -1,23 +1,22 @@
 <?php
 
-/* 
-* Template Name: About Page 
-*
-* @package RED_Starter_Theme
-*/
+/** 
+ * Template Name: About Template
+ *
+ * @package RED_Starter_Theme
+ */
 
-// copy content from page.php?
 ?>
 
 <?php get_header(); ?>
 
 <header class="entry-header custom-hero">
-	<div class="container">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</div>
 </header>
+<div class="custom-hero-title">
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+</div>
 
-<div id="content" class="site-content">
+<div id="content" class="site-content-wide">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
