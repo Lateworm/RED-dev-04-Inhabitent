@@ -9,23 +9,21 @@
 
 			</div><!-- #content -->
 
+			<footer id="colophon" class="site-footer" role="contentinfo"> <!-- footer background image -->
+			</footer>
 
-
-			<footer id="colophon" class="site-footer" role="contentinfo">
-			</footer><!-- #colophon -->
-
-			<div id="tertiary" class="widgetized-footer" role="complementary">
+			<div id="tertiary" class="widgetized-footer" role="complementary"> <!-- footer widgets -->
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 			</div>
 
+			<img class="footer-logo" src="<?php echo get_stylesheet_directory_uri()?>/img/inhabitent-logo-text.svg" alt="Inhabitent logo" >
+
 			<div class="site-info">
 				<p>Copyright © 2017 Inhabitent</p>
-			</div><!-- .site-info -->
+			</div>
 
-			
 		</div><!-- #page -->
 		
-
 		<?php wp_footer(); ?>
 
 	</body>
