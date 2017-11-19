@@ -4,10 +4,26 @@
 	justify-content: space-between;
 }
 
-.type-product {
-	width: 214px;
+.type-product { // an individual product listing
+	width: 262px;
+
+
+}
+
+.type-product-text {
 	border: $border__main;
 	border-top: $border__bold;
-	padding: $base__space-unit;
+	padding: 0 $base__space-unit;
+	display: flex;
+	justify-content: space-between;
+}
+
+.type-product-title {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.type-product-price {
+	padding-left: 5px;
 }
 
