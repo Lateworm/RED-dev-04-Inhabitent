@@ -3,11 +3,21 @@
 --------------------------------------------------------------*/
 
 .site-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	font-family: $font__accent;
 	border-bottom: $border__main;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	img{
+		height: $base__space-unit
+	}
+	.menu-main-menu-container {
+		display: flex;
+		justify-content: flex-end;
+	}
 }
+	
+
 
 
 /* Links */
@@ -71,13 +81,6 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -122,11 +125,6 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
 
 	.nav-previous {
 		float: left;
