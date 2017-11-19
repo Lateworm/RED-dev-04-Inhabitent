@@ -32,12 +32,6 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 
 ### Baby Steps
 
-
-
-
-- use add_action_pre_get_post to change the title at the top of product pages
-- Add search to navbar (there's a specific wordpress function that can go in header.php)
-
 - Set up Journal entries on frontpage
 	- the_permalink, wp_count_comments
 
@@ -45,6 +39,9 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 - Create content to be displayed in the Shop Stuff area
 - complete about.php
 - Figure out how to apply a certain css style to a certain element if on a certain page ?
+
+- use add_action_pre_get_post to change the title at the top of product pages
+- Add search to navbar (there's a specific wordpress function that can go in header.php)
 
 ### Major Goals
 
@@ -74,6 +71,7 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 - Run Theme Check Plugin before you submitting!
 - Also, generally make sure that you're adhering to [WordPress' PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
 - customize the theme's screenshot and delete that other theme file that's still hangin' around
+remove `, time()` from functions.php line 103.
 
 ## Room for Improvement
 
