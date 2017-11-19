@@ -1,0 +1,13 @@
+.site-main-products { // the container that holds all the product posts
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.type-product {
+	width: 214px;
+	border: $border__main;
+	border-top: $border__bold;
+	padding: $base__space-unit;
+}
+

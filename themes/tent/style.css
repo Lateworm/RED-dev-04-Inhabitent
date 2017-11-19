@@ -292,13 +292,6 @@ h1, h2, h3, h4, h5, h6 {
 .entry-header {
   position: relative; }
 
-.entry-title a,
-.entry-meta {
-  background-color: #248A83;
-  color: #fff;
-  position: absolute;
-  padding: 1.5rem; }
-
 .entry-title a {
   top: 1.5rem;
   left: 0; }
@@ -356,13 +349,6 @@ html {
           box-sizing: border-box;
   font-size: 16px;
   font-size: 1rem; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
 
 body {
   background: #fff;
@@ -470,6 +456,69 @@ table {
 .widgetized-sidebar {
   padding-left: 3rem;
   border-left: 1px solid #e1e1e1; }
+
+.site-footer {
+  background-image: url("../../img/dark-wood.png");
+  color: #fff; }
+
+.widgetized-footer,
+.site-info {
+  color: #fff; }
+  .widgetized-footer a, .widgetized-footer a:hover, .widgetized-footer a:visited,
+  .site-info a,
+  .site-info a:hover,
+  .site-info a:visited {
+    color: #fff; }
+  .widgetized-footer .widget-title,
+  .site-info .widget-title {
+    color: #d99054; }
+  .widgetized-footer .widget,
+  .site-info .widget {
+    margin-right: 4.5rem; }
+
+.widgetized-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-info {
+  text-align: center; }
+
+.front-page-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.front-page-shop-entry {
+  width: 214px;
+  border: 1px solid #e1e1e1;
+  border-top: 6px solid #e1e1e1;
+  padding: 1.5rem; }
+
+.front-page-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.front-page-journal-entry {
+  width: 309.3px;
+  border: 1px solid #e1e1e1;
+  border-top: 6px solid #e1e1e1;
+  padding: 1.5rem; }
+
+.wp-post-image {
+  width: 100%; }
+
+.custom-hero {
+  height: 100vh; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -618,12 +667,6 @@ a {
     display: none; }
   .main-navigation ul {
     display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
@@ -817,51 +860,25 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* front-page */
-.front-page-journal {
+.site-main-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.front-page-journal-entries {
-  width: 400px;
-  border: 1px solid #e1e1e1; }
+.type-product {
+  width: 214px;
+  border: 1px solid #e1e1e1;
+  border-top: 6px solid #e1e1e1;
+  padding: 1.5rem; }
 
-.wp-post-image {
-  width: 100%; }
-
-.custom-hero {
-  height: 100vh; }
-
-.site-footer {
-  background-image: url("../../img/dark-wood.png");
-  color: #fff; }
-
-.widgetized-footer,
-.site-info {
-  color: #fff; }
-  .widgetized-footer a, .widgetized-footer a:hover, .widgetized-footer a:visited,
-  .site-info a,
-  .site-info a:hover,
-  .site-info a:visited {
-    color: #fff; }
-  .widgetized-footer .widget-title,
-  .site-info .widget-title {
-    color: #d99054; }
-  .widgetized-footer .widget,
-  .site-info .widget {
-    margin-right: 4.5rem; }
-
-.widgetized-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.site-info {
-  text-align: center; }
+.site-main-journal .entry-title a,
+.site-main-journal .entry-meta {
+  background-color: #248A83;
+  color: #fff;
+  position: absolute;
+  padding: 1.5rem; }

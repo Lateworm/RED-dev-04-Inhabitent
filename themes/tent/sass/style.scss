@@ -59,6 +59,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "elements";
 @import "grid";
 @import "sidebar";
+@import "footer";
+
+@import "front-page";
 
 @import "forms";
 @import "navigation";
@@ -66,7 +69,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 @import "content";
 @import "media";
-@import "page-templates";
-@import "footer";
+
 @import "archive-product";
+@import "archive-journal";
 
