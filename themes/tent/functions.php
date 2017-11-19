@@ -100,7 +100,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 
-	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri(), time() );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/5a9b3a170f.js', array(), true);
 
