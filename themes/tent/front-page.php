@@ -27,7 +27,7 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
+			<?php /* Start the main loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content' ); ?>
 			<?php endwhile; ?>
@@ -37,54 +37,51 @@ get_header(); ?>
 		<?php endif; ?>
 
 
-
-
-
-
-
-		<!-- Jim's shop stuff code -->
 		<h2>Shop Stuff</h2>
 		<section class="product-info container">
-			<?php
+
+			<?php /* start a secondary loop to return product posts */
 					$terms = get_terms( array(
 							'taxonomy' => 'product-type',
 							'hide_empty' => 0,
 					) );
 					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
 			?>
-					<div class="product-type-blocks">
+
+					<div class="front-page-shop">
 						<?php foreach ( $terms as $term ) : ?>
-								<div class="product-type-block-wrapper">
+						
+								<div class="front-page-shop-entry">
 									<img src="<?php echo get_template_directory_uri() . '/img/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
 									<p><?php echo $term->description; ?></p> <!-- bring in the product type icons -->
 									<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
 								</div>
+
 						<?php endforeach; ?>
 					</div>
+
 			<?php endif; ?>
 		</section>
 
 
 
 		<h2>Inhabitent Journal</h2>
-		<div class="front-page-journal">
+		<section class="front-page-journal">
 			
-			<?php /* start the secondary loop to return journal entries */
+			<?php /* start a secondary loop to return posts */
 				$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, );
 				$journal_posts = get_posts( $args ); // returns an array of posts
 				foreach ( $journal_posts as $post ) : setup_postdata( $post );
 			?>
 
-				<div class="front-page-journal-entries">
+				<div class="front-page-journal-entry">
 					<?php the_post_thumbnail( 'medium' ); ?>
-					<span>
-						<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-					</span>
+					<span><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
 					<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 				</div>
 
 			<?php endforeach; wp_reset_postdata(); ?>
-		<div class="front-page-journal">
+		</section>
 
 
 		</main><!-- #main -->
