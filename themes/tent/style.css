@@ -1,7 +1,7 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
+Theme Name: Tent
+Theme URI: https://github.com/Lateworm/RED-dev-04-Inhabitent
+Author: Lateworm
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -427,11 +427,13 @@ table {
 
 .site-content {
   grid-column: 2/4;
-  grid-row: 3; }
+  grid-row: 3;
+  padding-bottom: 3rem; }
 
 .site-content-wide {
   grid-column: 2/5;
-  grid-row: 3; }
+  grid-row: 3;
+  padding-bottom: 3rem; }
 
 .widgetized-sidebar {
   grid-column: 4;
@@ -443,7 +445,8 @@ table {
 
 .widgetized-footer {
   grid-column: 2/4;
-  grid-row: 4; }
+  grid-row: 4;
+  margin-top: 1.5rem; }
 
 .site-info {
   grid-column: 2 / 5;
@@ -451,7 +454,8 @@ table {
 
 .footer-logo {
   grid-column: 4;
-  grid-row: 4; }
+  grid-row: 4;
+  margin-top: 3rem; }
 
 .widgetized-sidebar {
   padding-left: 3rem;
@@ -482,6 +486,13 @@ table {
   display: flex; }
 
 .site-info {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif; }
+
+.front-page-php h2 {
+  font-size: 2rem;
+  font-weight: 400;
   text-align: center; }
 
 .front-page-shop {
@@ -497,7 +508,10 @@ table {
   width: 214px;
   border: 1px solid #e1e1e1;
   border-top: 6px solid #e1e1e1;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  text-align: center; }
+  .front-page-shop-entry img {
+    width: 70px; }
 
 .front-page-journal {
   display: -webkit-box;
@@ -507,18 +521,52 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3rem; }
-
-.front-page-journal-entry {
-  width: 309.3px;
-  border: 1px solid #e1e1e1;
-  border-top: 6px solid #e1e1e1;
-  padding: 1.5rem; }
+  .front-page-journal .front-page-journal-entry {
+    width: 357.3px; }
+  .front-page-journal .front-page-journal-entry-text {
+    border: 1px solid #e1e1e1;
+    border-top: 6px solid #e1e1e1;
+    padding: 1.5rem; }
+    .front-page-journal .front-page-journal-entry-text span {
+      font-size: .8rem; }
+    .front-page-journal .front-page-journal-entry-text h3 {
+      color: #248A83; }
 
 .wp-post-image {
   width: 100%; }
 
 .custom-hero {
   height: 100vh; }
+
+.front-page-adventures {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 250px 270px;
+  grid-gap: 1.5rem;
+  grid-template-areas: "one 	two 		two " "one 	three 	four "; }
+  .front-page-adventures .front-page-adventure-entry:nth-child(1) {
+    grid-area: one;
+    font-size: 2.5rem; }
+  .front-page-adventures .front-page-adventure-entry:nth-child(2) {
+    grid-area: two;
+    font-size: 2rem; }
+  .front-page-adventures .front-page-adventure-entry:nth-child(3) {
+    grid-area: three;
+    font-size: 1.5rem; }
+  .front-page-adventures .front-page-adventure-entry:nth-child(4) {
+    grid-area: four;
+    font-size: 1.5rem; }
+  .front-page-adventures .front-page-adventure-entry {
+    background-color: #808080;
+    padding: 1.5rem; }
+  .front-page-adventures h3 {
+    font-family: "Merriweather", serif;
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    z-index: 5; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -563,7 +611,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -572,7 +619,6 @@ textarea {
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   textarea:focus {
     color: #111; }
 
@@ -591,21 +637,43 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .site-header {
+  font-family: "Novecento", sans-serif;
+  border-bottom: 1px solid #e1e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #e1e1e1;
-  font-family: "Novecento", sans-serif; }
+  color: #248A83; }
+  .site-header img {
+    height: 1.5rem; }
+  .site-header .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-header .main-navigation fieldset {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      border: 0;
+      padding: 0; }
+      .site-header .main-navigation fieldset input {
+        border: 0;
+        text-transform: uppercase;
+        padding-left: 1.5rem; }
+    .site-header .main-navigation i {
+      padding-left: 1.5rem; }
 
 /* Links */
 a {
@@ -871,10 +939,25 @@ object {
           justify-content: space-between; }
 
 .type-product {
-  width: 214px;
+  width: 262px; }
+
+.type-product-text {
   border: 1px solid #e1e1e1;
   border-top: 6px solid #e1e1e1;
-  padding: 1.5rem; }
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.type-product-title {
+  overflow: hidden;
+  white-space: nowrap; }
+
+.type-product-price {
+  padding-left: 5px; }
 
 .site-main-journal .entry-title a,
 .site-main-journal .entry-meta {
