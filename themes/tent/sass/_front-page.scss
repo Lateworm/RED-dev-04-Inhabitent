@@ -1,13 +1,49 @@
+.front-page-php {
+	h2 {
+		font-size: 2rem;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+.front-page-shop { // the container that holds the four shop entries on the front page
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:2*$base__space-unit;
+}
+
+.front-page-shop-entry {
+	width: 214px;
+	border: $border__main;
+	border-top: $border__bold;
+	padding: $base__space-unit;
+	text-align: center;
+	img {
+		width: 70px;
+	}
+}
+
 .front-page-journal { // the container that holds the three journal entries on the front page
 	display: flex;
 	justify-content: space-between;
+	margin-bottom:2*$base__space-unit;
+	.front-page-journal-entry { // an individual journal entry
+		width: 357.3px;
+	}
+	.front-page-journal-entry-text { // the lower div of the entry, contains the text
+		border: $border__main;
+		border-top: $border__bold;
+		padding: $base__space-unit;
+			span {
+				font-size: .8rem;
+			}
+			h3 {
+				color: $color__brand1;
+			}
+	}
 }
 
-.front-page-journal-entries {
-	width: 358px;
-	border: $border__main;
-	padding: 0 $base__space-unit;
-}
+
 
 .wp-post-image {
 	width: 100%;
@@ -16,4 +52,50 @@
 .custom-hero {
 	height: 100vh;
 }
+
+.front-page-adventures {
+
+	display: grid;
+	width: 100%;
+	grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 250px 270px;
+	grid-gap: $base__space-unit;
+	grid-template-areas:
+	"one 	two 		two "
+	"one 	three 	four ";
+	
+
+	.front-page-adventure-entry:nth-child(1) { 
+		grid-area: one;
+		font-size: 2.5rem;}
+	.front-page-adventure-entry:nth-child(2) { 
+		grid-area: two; 
+		font-size: 2rem;}
+	.front-page-adventure-entry:nth-child(3) { 
+		grid-area: three; 
+		font-size: 1.5rem;}
+	.front-page-adventure-entry:nth-child(4) { 
+		grid-area: four; 
+		font-size: 1.5rem;}
+
+	.front-page-adventure-entry {
+		background-color: $color__brand6;
+		padding: $base__space-unit;
+	}
+
+	h3 {
+		font-family: $font__main;
+		color: $color__background-body;
+		font-weight: 400;
+		text-transform: none;
+		letter-spacing: 0;
+		z-index: 5;
+	}
+	
+}
+
+
+
+
+
 
