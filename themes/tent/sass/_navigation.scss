@@ -1,19 +1,49 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header-container {
+	background-color: hsla(0,0,100,.8);
+	border-bottom: $border__main;
+	z-index: 10;
+}
 
 .site-header {
 	font-family: $font__accent;
-	border-bottom: $border__main;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: $color__brand1;
+
 	img{
-		height: $base__space-unit
+		height: $base__space-unit;
+		z-index: 20;
 	}
-	.menu-main-menu-container {
+
+	.main-navigation { // everything that's flexed to the right
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
+		z-index: 20;
+
+		fieldset {
+			// display: flex;
+			flex-direction: row-reverse;
+			border: 0;
+			padding: 0;
+
+			input {
+				border: 0;
+				text-transform: uppercase;
+				padding-left: 1.5rem;
+				
+			}
+
+		}
+
+		i {
+			padding-left: 1.5rem;
+		}
+
 	}
 }
 	
