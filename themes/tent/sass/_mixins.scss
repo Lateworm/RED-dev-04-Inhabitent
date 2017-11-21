@@ -12,3 +12,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin clickthrough {
+	text-transform: uppercase;
+	font-family: $font__accent;
+	font-size: .8rem;
+	padding: $base__space-unit/2 $base__space-unit;
+}

@@ -7,6 +7,49 @@
 	padding-left: $base__space-unit;
 }
 
+/* Clickthrough (shop, read more, etc) */
+
+.clickthough-main {
+	@include clickthrough;
+	background-color: $color__brand1;
+	color: $color__background-body;
+	&:visited {
+		color: $color__background-body;
+	};
+	&:hover {
+		background-color: #19625d;
+	}
+}
+
+.clikthrough-accent1 {
+	@include clickthrough;
+	color: $color__text-main;
+	border: 1px solid $color__text-main;
+	&:visited {
+		color: $color__text-main;
+	};
+	&:hover {
+		background-color: $color__brand1;
+		color: $color__background-body;
+		border: 0;
+	}
+	
+}
+
+.clickthrough-accent2 {
+	@include clickthrough;
+	color: $color__background-body;
+	border: 1px solid $color__background-body;
+	&:visited {
+		color: $color__background-body;
+	};
+	&:hover {
+		background-color: $color__brand1;
+		color: $color__background-body;
+		border: 0;
+	}
+}
+
 /* Posts and pages */
 
 .sticky {

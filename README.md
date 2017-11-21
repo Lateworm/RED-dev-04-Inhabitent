@@ -41,6 +41,11 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 - enlarge the little tent
 
 
+## Might Need a Little Help
+
+- How can I check for CSS that isn't used?
+
+
 ## Final steps for completion
 
 - Run Theme Check Plugin before submitting!
