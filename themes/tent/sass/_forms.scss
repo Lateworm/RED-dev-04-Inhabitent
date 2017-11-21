@@ -2,6 +2,26 @@
 # Forms
 --------------------------------------------------------------*/
 
+/* Search form in navbar */
+
+.search-form {
+
+ 	input {
+	 	border: 0;
+		width: 0px;
+		transition: width 1s, margin-left .5s;
+ 	}
+	.expanded {
+		width: 250px;
+		margin-left: $base__space-unit;
+	}
+}
+
+
+
+
+/* Contact form */
+
 /* Buttons */
 
 button,
