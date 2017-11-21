@@ -69,19 +69,70 @@ function tent_widgetized_sidebar() {
 }
 
 function tent_widgetized_footer() {
-    register_sidebar( array(
-        'name'          => esc_html( 'Footer' ),
-        'id'            => 'footer-1',
-        'description'   => '',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</aside>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+	register_sidebar( array(
+			'name'          => esc_html( 'Footer' ),
+			'id'            => 'footer-1',
+			'description'   => '',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+	) );
 }
 
 add_action( 'widgets_init', 'tent_widgetized_footer' );
 add_action( 'widgets_init', 'tent_widgetized_sidebar' );
+
+
+function tent_product_archive( $query ) {
+	if ( is_post_type_archive( 'product' ) ) {
+		$query->set( 'posts_per_page', '16' );
+
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Shop Stuff';
+			return $title;
+    });
+	}
+
+	if ( is_tax( 'product-type', 'do' ) ) {
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Do Stuff';
+			return $title;
+    });
+	}
+
+	if ( is_tax( 'product-type', 'eat' ) ) {
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Eat Stuff';
+			return $title;
+    });
+	}
+
+	if ( is_tax( 'product-type', 'do' ) ) {
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Do Stuff';
+			return $title;
+    });
+	}
+
+	if ( is_tax( 'product-type', 'sleep' ) ) {
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Sleep Stuff';
+			return $title;
+    });
+	}
+
+	if ( is_tax( 'product-type', 'wear' ) ) {
+		add_filter( 'get_the_archive_title', function( $title ) {
+      $title = 'Wear Stuff';
+			return $title;
+    });
+	}
+
+}
+
+add_action( 'pre_get_posts', 'tent_product_archive' );
+
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -100,9 +151,12 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 
-	wp_enqueue_style( 'tent-style', get_stylesheet_uri(), time() );
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/5a9b3a170f.js', array(), true);
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri().'/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script ( 'font-awesome', 'https://use.fontawesome.com/5a9b3a170f.js', array(), true );
+	wp_enqueue_script ( 'search-toggle', get_template_directory_uri().'/build/js/search-toggle.min.js', array('jquery'), false,  true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
