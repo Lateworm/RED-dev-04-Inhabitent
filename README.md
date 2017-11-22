@@ -31,13 +31,10 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 
 ## Dev Tasks
 
-- create re-usable styles for clickthroughs
+- add eat/do/sleep... on the "Shop Stuff" page
 - Complete styling of archive-product.php, taxonomy-product-type.php, and single-product.php
 - Create search results page and 404 page
-- Make the cursor change when hovering over the magnifying glass.
-- Move to 4-column layout on teh adventures group to solve asymmetry.
-- Remove focus from the search form if the magnifyig glass is clicked while teh search form is expanded.
-- Hide the visible bit of .search-form. It can't just be set to zero, that causes malfunctions with the sliding search field.
+- Make the cursor change to pointer when hovering over the magnifying glass.
 - enlarge the little tent
 
 
@@ -53,6 +50,7 @@ This project uses gulp to compile SCSS and for browser-sync. Run `gulp` in `them
 - customize the theme's screenshot and delete that other theme file that's still hangin' around
 - Double check project requirements
 - Be sure to test your project completely in all major browsers (Chrome, Firefox, Safari, Opera, Edge) when you think you’re finished
+ - Set debug: false in wp-config
 
 
 ### Project Submission
