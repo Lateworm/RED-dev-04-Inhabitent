@@ -13,17 +13,17 @@
 
 
 		if ( $('.search-field').hasClass('expanded') ) {
-			$('.search-field').toggleClass('expanded');
+			$('.search-field').removeClass('expanded');
 
 		} else {
-			$('.search-field').toggleClass('expanded');
+			$('.search-field').addClass('expanded').focus();
 
-		};
+		}
 
+	});
 
-
-
-	
+	$('.search-field').on('blur', function(){
+			$('.search-field').removeClass('expanded');
 	});
 
 })(jQuery);
