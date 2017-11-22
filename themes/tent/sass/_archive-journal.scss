@@ -3,5 +3,32 @@
 	background-color: $color__brand1;
 	color: $color__background-body;
 	position: absolute;
-	padding: $base__space-unit;
+	max-width: 75%;
+
+}
+
+.site-main-journal .entry-title a {
+	padding: $base__space-unit/2 $base__space-unit;
+	font-size: 2rem;
+}
+
+
+.site-main-journal .entry-meta {
+		padding: $base__space-unit/4 $base__space-unit;
+}
+
+.entry-title a {
+	top: 2*$base__space-unit;
+	left: 0;
+	&:visited {
+		color: $color__background-body;
+	}
+	&:hover {
+		color: $color__brand4;
+	}
+}
+
+.entry-meta {
+	bottom: 6px;
+	right: 0;
 }

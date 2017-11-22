@@ -4,7 +4,6 @@
 
 body,
 button,
-input,
 select,
 textarea {
 	color: $color__text-main;
@@ -28,22 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-header {
 	position: relative;
-}
-
-.entry-title a {
-	top: $base__space-unit;
-	left: 0;
-	&:visited {
-		color: $color__background-body;
-	}
-	&:hover {
-		color: $color__brand4;
-	}
-}
-
-.entry-meta {
-	bottom: 0;
-	right: 0;
 }
 
 /* Copy */
