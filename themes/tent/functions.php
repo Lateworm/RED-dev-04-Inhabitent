@@ -96,21 +96,21 @@ function tent_product_archive( $query ) {
 
 	if ( is_tax( 'product-type', 'do' ) ) {
 		add_filter( 'get_the_archive_title', function( $title ) {
-      $title = 'Do Stuff';
+      $title = 'Do';
 			return $title;
     });
 	}
 
 	if ( is_tax( 'product-type', 'eat' ) ) {
 		add_filter( 'get_the_archive_title', function( $title ) {
-      $title = 'Eat Stuff';
+      $title = 'Eat';
 			return $title;
     });
 	}
 
 	if ( is_tax( 'product-type', 'sleep' ) ) {
 		add_filter( 'get_the_archive_title', function( $title ) {
-      $title = 'Sleep Stuff';
+      $title = 'Sleep';
 			return $title;
     });
 	}
