@@ -10,6 +10,7 @@
 	 	border: 0;
 		width: 0px;
 		transition: width 1s, margin-left .5s;
+		background: none;
  	}
 	.expanded {
 		width: 250px;
@@ -70,8 +71,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type="password"] {
 	padding: 3px;
 }
 
