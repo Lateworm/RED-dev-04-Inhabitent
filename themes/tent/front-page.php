@@ -53,7 +53,7 @@ get_header(); ?>
 								<div class="front-page-shop-entry">
 									<img src="<?php echo get_template_directory_uri() . '/img/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
 									<p><?php echo $term->description; ?></p> <!-- bring in the product type icons -->
-									<p><a href="<?php echo get_term_link( $term ); ?>" class="btn clickthough-main"><?php echo $term->name; ?> Stuff</a></p>
+									<p><a href="<?php echo get_term_link( $term ); ?>" class="btn clickthrough-main"><?php echo $term->name; ?> Stuff</a></p>
 								</div>
 
 						<?php endforeach; ?>
@@ -83,7 +83,7 @@ get_header(); ?>
 					<div class="front-page-journal-entry-text">
 						<span><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-						<a href="<?php the_permalink() ?>" class="clikthrough-accent1">Read More</a>
+						<a href="<?php the_permalink() ?>" class="clickthrough-accent1">Read More</a>
 					</div>
 
 				</div>
@@ -118,7 +118,7 @@ get_header(); ?>
 
 		</section>
 
-		<a href="<?php echo site_url(); ?>/adventure" class="clickthough-main">More Adventures</a>
+		<a href="<?php echo site_url(); ?>/adventure" class="clickthrough-main">More Adventures</a>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

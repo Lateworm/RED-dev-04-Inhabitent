@@ -9,7 +9,7 @@
 
 /* Clickthrough (shop, read more, etc) */
 
-.clickthough-main {
+.clickthrough-main {
 	@include clickthrough;
 	background-color: $color__brand1;
 	color: $color__background-body;
@@ -21,7 +21,7 @@
 	}
 }
 
-.clikthrough-accent1 {
+.clickthrough-accent1 {
 	@include clickthrough;
 	color: $color__text-main;
 	border: 1px solid $color__text-main;
