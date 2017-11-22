@@ -548,6 +548,9 @@ table {
     .front-page-journal .front-page-journal-entry-text h3 {
       color: #248A83; }
 
+.front-page-journal-image {
+  height: 250px; }
+
 .wp-post-image {
   width: 100%; }
 

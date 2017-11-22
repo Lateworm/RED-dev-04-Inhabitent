@@ -73,7 +73,12 @@ get_header(); ?>
 			?>
 
 				<div class="front-page-journal-entry">
-					<?php the_post_thumbnail( 'medium' ); ?>
+					<div class="front-page-journal-image"
+						style="
+							background-image: url(<?php the_post_thumbnail_url( 'medium-large' ); ?>);
+							background-size: cover;
+							background-position: center;">
+					</div>
 
 					<div class="front-page-journal-entry-text">
 						<span><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
