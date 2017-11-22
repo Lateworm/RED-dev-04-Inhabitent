@@ -11,7 +11,15 @@
 
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<a href=" <?php the_permalink() ?> ">
+			<a
+				href="<?php the_permalink() ?>"
+				class="product-image"
+				style="
+					background:
+						url(<?php the_post_thumbnail_url( 'medium-large' ); ?>);
+					background-size: cover;
+					background-position: center;" 
+
 				<?php the_post_thumbnail( 'medium' ); ?>
 			</a>
 		<?php endif; ?>
