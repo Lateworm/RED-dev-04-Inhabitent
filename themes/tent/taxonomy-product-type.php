@@ -2,7 +2,7 @@
 /**
  * Template for displaying an archive of a specific product type.
  *
- * @package RED_Starter_Theme
+ * @package Tent
  */
 
 get_header(); ?>

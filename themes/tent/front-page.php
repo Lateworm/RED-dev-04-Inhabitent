@@ -3,7 +3,7 @@
 /**
  * Template Name: Frontpage Template
  *
- * @package RED_Starter_Theme
+ * @package Tent
  */
 
 get_header(); ?>

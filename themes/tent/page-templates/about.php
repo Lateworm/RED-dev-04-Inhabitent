@@ -3,7 +3,7 @@
 /** 
  * Template Name: About Template
  *
- * @package RED_Starter_Theme
+ * @package Tent
  */
 
 ?>
