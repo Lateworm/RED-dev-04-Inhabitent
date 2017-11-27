@@ -2,13 +2,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	.type-product { // an individual product listing
+		width: 262px;
+	}
 }
 
-.type-product { // an individual product listing
-	width: 262px;
 
-
-}
 
 .type-product-text {
 	border: $border__main;

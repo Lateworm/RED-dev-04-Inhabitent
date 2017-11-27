@@ -8,7 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
-Text Domain: Tent
+Text Domain: twentythirteen
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1012,9 +1012,8 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.type-product {
-  width: 262px; }
+  .site-main-products .type-product {
+    width: 262px; }
 
 .type-product-text {
   border: 1px solid #e1e1e1;
