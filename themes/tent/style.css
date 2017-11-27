@@ -289,9 +289,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 0.125em; }
 
-.page-title {
-  text-align: center; }
-
 .entry-header {
   position: relative; }
 
@@ -344,6 +341,9 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+
+h1 {
+  text-align: center; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -942,6 +942,10 @@ a {
 .product-image {
   display: block;
   height: 250px; }
+
+/* Search results page (search.php) */
+.page-title-search {
+  text-align: left; }
 
 /*--------------------------------------------------------------
 # Media
