@@ -21,4 +21,5 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+	<a href="<?php the_permalink() ?>" class="clickthrough-accent1">Read More →</a>
 </article><!-- #post-## -->
