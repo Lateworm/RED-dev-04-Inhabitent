@@ -298,6 +298,12 @@ h1 {
 h2 {
   font-size: 2.125rem; }
 
+.site-content-wide.site-content-about {
+  padding-left: 160px;
+  padding-right: 160px; }
+  .site-content-wide.site-content-about h2 {
+    text-align: center; }
+
 .entry-header {
   position: relative; }
 

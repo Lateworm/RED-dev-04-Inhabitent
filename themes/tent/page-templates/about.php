@@ -16,7 +16,7 @@
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 </div>
 
-<div id="content" class="site-content-wide">
+<div id="content" class="site-content-wide site-content-about">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
