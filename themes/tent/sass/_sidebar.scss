@@ -1,9 +1,15 @@
 .widgetized-sidebar {
-	padding-left: 2*$base__space-unit;
+	padding: 3rem 0 0 3rem;
 	border-left: $border__main;
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
 	i {
 		width: $base__space-unit;
 	}
+
 }
 
 .day-of-week {

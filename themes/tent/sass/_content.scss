@@ -4,10 +4,6 @@
 	margin-bottom: 48px;
 }
 
-.site-content {
-	margin-right: 2*$base__space-unit;
-}
-
 .menu-item { // items in navbar
 	text-transform: uppercase;
 	padding-left: $base__space-unit;
@@ -63,7 +59,7 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 4.5rem;
 }
 
 .updated:not(.published){
