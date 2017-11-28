@@ -27,11 +27,8 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the main loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content' ); ?>
-			<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>
+
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
@@ -102,12 +99,11 @@ get_header(); ?>
 				foreach ( $journal_posts as $post ) : setup_postdata( $post );
 			?>
 				<div class="front-page-adventure-entry" style="
-					background:
-						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-						url(<?php the_post_thumbnail_url( 'medium-large' ); ?>);
-					background-size: cover;
-					background-position: center;">
-				
+											background:
+												linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+												url(<?php the_post_thumbnail_url( 'medium-large' ); ?>);
+											background-size: cover;
+											background-position: center;">
 					<div class="front-page-adventure-entry-text">
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 					</div>
@@ -116,9 +112,13 @@ get_header(); ?>
 
 			<?php endforeach; wp_reset_postdata(); ?> <!-- end loop for post titles -->
 
-		</section>
+		<div>
+			<a href="<?php echo site_url(); ?>/adventure" class="clickthrough-main">More Adventures</a>
+		</div>
 
-		<a href="<?php echo site_url(); ?>/adventure" class="clickthrough-main">More Adventures</a>
+		</section>
+		
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
