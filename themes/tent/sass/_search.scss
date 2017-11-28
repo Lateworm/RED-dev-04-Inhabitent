@@ -1,0 +1,19 @@
+/* Search results page (search.php) */
+
+.page-title-search {
+	text-align: left;
+}
+
+.site-content-search {
+
+	h2 a { // the title of an individual search result
+		color: $color__brand1;
+		&:visited {
+			color: $color__brand1;
+		}
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+}

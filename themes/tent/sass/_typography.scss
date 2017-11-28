@@ -21,6 +21,17 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: $font__letter-spacing;
 }
 
+h1 {
+	text-align: center;
+	font-size: 2.375rem;
+	line-height: 3rem;
+	margin-bottom: .5rem;
+}
+
+h2 {
+	font-size: 2.125rem;
+}
+
 .entry-header {
 	position: relative;
 }

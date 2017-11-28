@@ -1,3 +1,9 @@
+.page-header {
+	padding-bottom: 1rem;
+	border-bottom: $border__main;
+	margin-bottom: 48px;
+}
+
 .site-content {
 	margin-right: 2*$base__space-unit;
 }
@@ -105,10 +111,4 @@
 .product-image {
 	display: block;
 	height: 250px;
-}
-
-/* Search results page (search.php) */
-
-.page-title-search {
-	text-align: left;
 }
