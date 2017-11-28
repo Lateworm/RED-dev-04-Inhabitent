@@ -2,10 +2,14 @@
 # Forms
 --------------------------------------------------------------*/
 
-/* Search form in navbar */
+/* Search forms */
 
-.search-form {
+.search-404 .search-field {
+	width: 250px;
+}
 
+
+.main-navigation .search-form { // the search-form within the navbar
  	input {
 	 	border: 0;
 		width: 0px;

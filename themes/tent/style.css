@@ -598,15 +598,18 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* Search form in navbar */
-.search-form input {
+/* Search forms */
+.search-404 .search-field {
+  width: 250px; }
+
+.main-navigation .search-form input {
   border: 0;
   width: 0px;
   -webkit-transition: width 1s, margin-left .5s;
   transition: width 1s, margin-left .5s;
   background: none; }
 
-.search-form .expanded {
+.main-navigation .search-form .expanded {
   width: 250px;
   margin-left: 1.5rem; }
 
